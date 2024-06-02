@@ -27,6 +27,6 @@ window.onclick = function(event) {
     }
 }
 //Home : 
-function navigateHome() {
-    window.location.href ='../home_page/homePage.html';
+function navigateHome(){
+    window.location.href ='../../index.html';
 }
