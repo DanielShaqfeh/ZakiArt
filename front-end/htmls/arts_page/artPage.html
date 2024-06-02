@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Page</title>
+    <link rel="stylesheet" href="arts_page_style.css">
+</head>
+<body>
+    <div class="horizontal-bar">
+        <div class="logo"><img class="logo-img" src="../../images/Zaki_logo.png" alt=""></div>
+        <div class="nav-center">
+            <button class="nav-item" onclick="navigateHome()">Home</button>
+            <button class="nav-item">ARTIST</button>
+            <button class="nav-item">CONTACT</button>
+        </div>
+    </div>
+    <div class="intro">
+        <h1>Welcome to ZAKI SHAQFEH ARTS</h1>
+        <p>Explore the captivating artworks of Zaki Shaqfeh, where creativity meets passion.</p>
+    </div>
+    <div class="gallery">
+        <img class="artwork" src="../../images/paint001.jpg" alt="" data-text=".من اعمال الفنان الفلسطيني زكي شقفة">
+        <img class="artwork"  src="../../images/paint002.jpg"alt="Art 2" data-text= ".لوحة القضية والامل للفنان زكي شقفة">
+        <img class="artwork"  src="../../images/paint003.jpg" alt="Art 3" data-text="ألف سلام للمرأة الفلسطينية المقاومة الصامدة 
+        .من اعمال الفنان زكي شقفة ">
+        <img class="artwork"  src="../../images/paint004.jpg" alt="Art 4" data-text=".لوحه بعنوان لقـــــــــــــــاء - من اعمال الفنان زكي شقفة">
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgid">
+        <p id="modalText"></p>
+    </div>
+
+
+    <script src="arts_page_script.js"></script>
+</body>
+</html>
