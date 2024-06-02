@@ -1,36 +1,45 @@
 body {
     background: linear-gradient(to right, #060606, #21211f, #272f31);
     text-align: center;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
+
 .horizontal-bar {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
+
 .logo {
     width: 300px;
     height: 150px;
     margin-right: 20px; 
     overflow: hidden;
 }
+
 .logo-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 .nav-item {
     color: rgb(140, 140, 141);
     font-size: 1.5em;
     margin-right: 150px; 
     border: none;
-    background-color:transparent;
-    transition:  transform  0.1s ease;
+    background-color: transparent;
+    transition: transform 0.1s ease;
 }
-.nav-item:hover{
+
+.nav-item:hover {
     color: aliceblue;
 }
-.nav-center{
+
+.nav-center {
     margin-right: auto;
     margin-left: auto;
 }
@@ -47,23 +56,27 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(3, 89, 108, 0.8); 
 }
+
 .intro h1 {
     font-size: 2em;
     margin: 0 0 10px;
     color: aliceblue;
 }
+
 .intro p {
     color: aliceblue;
     font-size: 1.2em;
     margin: 0;
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     padding: 40px;
-    gap:100px;
+    gap: 100px;
     justify-content: space-between;
 }
+
 .gallery img {
     width: 300px;
     height: 300px;
@@ -72,13 +85,15 @@ body {
     margin-bottom: 40px;
     transition: transform 0.2s ease; 
     border-color: black;
-    padding:5px;
+    padding: 5px;
 }
+
 .gallery img:hover {
     transform: scale(1.1);  
     box-shadow: 0 0 10px 5px rgba(3, 89, 108, 0.8); 
 }
-/*Model CSS :  */
+
+/* Modal CSS */
 .modal {
     display: none;
     position: fixed;
@@ -86,26 +101,37 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color:  rgba(2, 0, 0, 0.8); 
+    background-color: rgba(2, 0, 0, 0.8); 
+    overflow: auto;
     transition: opacity 0.11s; 
-    animation:showup 1s forwards;
+    animation: showup 1s forwards;
 }
-#modalText{
-    font-size:30px;
+
+#modalText {
+    font-size: 30px;
     color: #f8f8f8;
-    margin-top: 100px;
-    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
 }
+
 @keyframes showup {
-    0% { opacity: 0;}
-    100% { opacity: 1;} 
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
 }
+
 /* Modal Content image */
 .modal-content {
     border-radius: 20px;          
     margin: auto;
     display: block;
-    margin-top:50px;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 50px;
 }
 
 /* Close */
@@ -118,6 +144,7 @@ body {
     font-weight: bold;
     transition: 0.3s;
 }
+
 .close:hover,
 .close:focus {
     color: #bbb;
@@ -125,3 +152,108 @@ body {
     cursor: pointer;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .horizontal-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+
+    .nav-item {
+        font-size: 1.2em;
+        margin-right: 20px;
+    }
+
+    .intro {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .gallery {
+        padding: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #modalText {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .modal-content {
+        max-width: 80%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .close {
+        font-size: 30px;
+        top: 10px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 150px;
+        height: 75px;
+    }
+
+    .nav-item {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    .intro {
+        width: 95%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .intro h1 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #modalText {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .close {
+        font-size: 25px;
+        top: 5px;
+        right: 15px;
+    }
+}
