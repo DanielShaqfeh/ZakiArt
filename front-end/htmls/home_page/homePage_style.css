@@ -8,8 +8,8 @@ body {
     padding: 20px;
 }
 .logo {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
     margin-right: 20px; 
     overflow: hidden;
 }
@@ -19,36 +19,34 @@ body {
     object-fit: contain;
 }
 .nav-item {
-    color: aliceblue;
+    color: rgb(140, 140, 141);
     font-size: 1.5em;
     border: none;
     background-color:transparent;
-    transition:  transform  0.2s ease; 
+    transition:  transform  0.1s ease; 
+}
+.nav-item:hover{
+    color: aliceblue;
 }
 #contactId{
     margin-left:100px;
-}
-.nav-item:hover{
-    text-shadow: 1px 1px 5px rgba(25, 184, 220, 0.8); 
-    transform: scale(1.1);  
 }
 .nav-center{
     margin-right: auto;
     margin-left: auto;
 }
 .nav-login{
-    color: aliceblue;
-    font-size:1.7em;
+    color: rgb(140, 140, 141);
+    font-size:1.8em;
     font-family: Lato;
     font-weight: bold;
     background-color: transparent;
     border: none;
     margin-right:100px;
-    transition:  transform  0.2s ease; 
+    transition:  transform  0.1s ease; 
 }
 .nav-login:hover{
-    text-shadow: 1px 1px 5px rgba(25, 184, 220, 0.8); 
-    transform: scale(1.1);  
+    color: aliceblue;
 }
 .nav-reg{
    margin-right:20px;
@@ -59,18 +57,16 @@ body {
    border: none;
    background-color:black;
    padding: 10px 20px;
-   transition:  transform  0.3s ease; 
+   transition:  transform  0.1s ease; 
 }
 .nav-reg:hover{
     box-shadow: 0 0 10px 5px rgba(3, 89, 108, 0.8); 
-    transform: scale(1.1);  
 }
 .login-reg{
     justify-content:flex-end;
     display: flex;
 }
 /*end of bar*/
-
 h1{
     font-size:3em;
     color: aliceblue;
@@ -89,10 +85,8 @@ h1{
     border: none;
     background-color:black;
     padding: 10px 20px;
-    transition:  transform  0.2s ease; 
+    transition:  transform  0.1s ease; 
 }
 .nav-art:hover{
     box-shadow: 0 0 10px 5px rgba(3, 89, 108, 0.8); 
-    background-color:rgb(16, 15, 15);
-    transform: scale(1.1);  
 }
