@@ -1,8 +1,8 @@
+// modal stuff
 var modal = document.getElementById('myModal');
 var images = document.querySelectorAll('.artwork');
 var modalImg = document.getElementById("imgid");
 var modalText = document.getElementById("modalText");
-
 images.forEach(function(img) {
     img.onclick = function() {
         modal.style.display = "block";
@@ -26,12 +26,11 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-//Home : 
+// Navigators
 function navigateHome(){
     window.location.href ='../../index.html';
 }
+function navigateArtist() {
+    window.location.href ='../artist_page/artistPage.html';
+}
 
-document.addEventListener("DOMContentLoaded", function() {
-    var video = document.getElementById("bg-video");
-    video.playbackRate = 2.5; 
-});

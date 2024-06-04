@@ -2,12 +2,12 @@ body {
     background: linear-gradient(to right, #060606, #21211f, #272f31);
     text-align: center;
     margin: 0;
-    font-family: 'Lato', sans-serif;
 }
 .video-background {
     position: fixed;
     top: 0;
     left: 0;
+    margin: auto;
     width: 100%;
     height: 100%;
     z-index: -1; 
