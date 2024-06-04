@@ -4,6 +4,24 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+}
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3; 
+}
 
 .horizontal-bar {
     display: flex;
@@ -27,7 +45,7 @@ body {
 }
 
 .nav-item {
-    color: rgb(140, 140, 141);
+    color: rgb(180, 180, 183);
     font-size: 1.5em;
     margin-right: 150px; 
     border: none;

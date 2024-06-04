@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaki Arts</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/zaki_video01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <div class="horizontal-bar">
-        <div class="logo"><img class="logo-img" src="images/Zaki_logo.png" alt=""></div>
+        <div class="logo">
+            <img class="logo-img" src="images/Zaki_logo.png" alt="Zaki Logo">
+        </div>
         <div class="nav-center">
-            <button class="nav-item">ARTIST</button>
-            <button class="nav-item" id="contactId">CONTACT</button>
+            <button class="nav-item" onclick="navigateArtist()">Artist</button>
+            <button class="nav-item" id="contactId">Contact Us</button>
         </div>
         <div class="login-reg">
             <button class="nav-login">Login</button>
@@ -20,10 +28,8 @@
     </div>
     <h1> Discover the Beauty of Art</h1>
     <div class="center-btn">
-        <button class="nav-art"  onclick="navigateArts()">Browse Artwork</button>
+        <button class="nav-art" onclick="navigateArts()">Browse Artwork</button>
     </div>
-
-
     <script src="main.js"></script>
 </body>
 </html>

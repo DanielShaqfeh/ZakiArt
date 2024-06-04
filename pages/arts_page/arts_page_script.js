@@ -30,3 +30,8 @@ window.onclick = function(event) {
 function navigateHome(){
     window.location.href ='../../index.html';
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("bg-video");
+    video.playbackRate = 2.5; 
+});
