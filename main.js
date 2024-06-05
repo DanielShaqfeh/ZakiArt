@@ -6,4 +6,4 @@ function navigateArtist() {
 }
 
 
-
+var player = videojs('bg-video');
