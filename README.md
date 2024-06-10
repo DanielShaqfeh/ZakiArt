@@ -1,2 +1,2 @@
-[LiveSite](https://danielshaqfeh.github.io/ZakiArt-app/) 
+[LiveSite](https://danielshaqfeh.github.io/ZakiArt/) 
 ZakiArts is a dedicated online platform showcasing an exquisite collection of artwork, celebrating the legacy and passion of my grandfather, Zaki Shaqfeh. Explore a diverse array of artistic expressions that inspire and captivate, reflecting the timeless beauty of creativity. This project is my personal journey to share the art I'm proud of and to deepen my knowledge of web development.
